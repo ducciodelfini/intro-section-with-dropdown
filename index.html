@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+	#head{
+		grid area:header;
+		display:flex;
+		width:1440px;
+	}
+	#hleft{
+	float:left;
+	width:70%;
+	display:flex;
+
+	}
+	#hright{
+	float:right;
+	width:30%;
+	display:flex;
+	}
+	h1{
+		margin-left:30px;
+		font-size:18px;
+		color:hsl(0,0%,41%);
+	}
+	#snap{
+		height:21px;
+		weight:21px;
+		margin-top:15px;
+	}
+	.arrow{
+		margin-left:5px;
+	}
+	#register{
+		border-radius: 15px;
+		border: 2px solid hsl(0, 0%, 41%);
+		padding: 10px;
+		margin-top:0px;
+		cursor:pointer;
+	}
+	#content{
+		width:1440px;
+	}
+	#contentLeft{
+	float:left;
+	width:55%;
+	text-align:center;
+	}
+	#contentRight{
+	float:right;
+	width:45%;
+	}
+	#imgHero{
+		height:500px;
+		}
+	#intestation{
+		font-size:65px;
+		text-align:left;
+		display:inline-block;
+		margin-left:-300px;
+		margin-top:65px;
+
+	}
+	#text{
+		
+		font-size:14px;
+		text-align:left;
+		display:inline-block;
+		margin-top:-15px;
+		margin-left:-380px;
+		color:hsl(0,0%,41%);
+		
+	}
+	.button{
+		background-color:black;
+		color:hsl(0, 0%, 98%);
+		width:90px;
+		height:40px;
+		border-radius: 15px;
+		border: 2px solid black;
+		padding: 0px;
+		margin-left:70px;
+		margin-top:20px;
+		cursor:pointer;
+	}
+		.buttonSelected{
+		background-color:hsl(0, 0%, 98%);
+		color:hsl(0,0%,41%);
+		width:90px;
+		height:40px;
+		border-radius: 15px;
+		border: 2px solid hsl(0,0%,41%);
+		padding: 0px;
+		margin-left:70px;
+		margin-top:20px;
+		cursor:pointer;
+	}
+	#btnContent{
+	margin-top:10px;
+	display:inline-block;
+	}
+	#txtFoot{
+		margin-left:60px;
+	}
+	.imgFoot{
+		height:20px;
+		margin-left:20px;
+		margin-top:100px;
+	}
+	.mnuFeatures1{
+		position:absolute;
+		top:45px;
+		left:105px;
+		background-color:white;
+		box-shadow: 10px 5px 5px grey;
+		color:hsl(0,0%,41%);
+		padding:20px;
+	}
+	.mnuCompany{
+		position:absolute;
+		top:45px;
+		left:250px;
+		background-color:white;
+		box-shadow: 10px 5px 5px grey;
+		color:hsl(0,0%,41%);
+		padding:20px;
+	}
+	.vide{
+		visibility:hidden;
+	}
+	a{
+		color:hsl(0,0%,41%);
+		text-decoration:none; 
+	}
+	#features{
+		cursor:pointer;
+	}
+	#company{
+	cursor:pointer;
+	}
+	#login{
+	cursor:pointer;
+	}
+  </style>
+</head>
+<body>
+
+  <div id="head">
+	<div id="hleft">
+	  <img src="images/logo.svg" id="snap">
+	  <h1 id="features">Features<img src="images/icon-arrow-down.svg" id ="imgFeatures" class="arrow"></h1>
+	  <h1 id="company">Company<img src="images/icon-arrow-down.svg" id ="imgCompany" class="arrow"></h1>
+	  <h1>Careers</h1>
+	  <h1>About</h1>
+	</div>
+	<div id="hright">
+	  <h1 id="login">Login</h1>
+	  <h1 id="register">Register</h1>
+	 </div>
+  </div>
+  
+  <div id="content">
+  
+	<div id="contentLeft">
+  
+	  <h2 id="intestation">Make <br> remote work</h2><br>
+
+	  <p id="text">Get your team in sync, no matter your location. <br>
+	  Streamline processes, 
+	  create team rituals, and <br>
+	  watch productivity soar.</p>
+	  <div class="button" id="btn">
+	  <p id="btnContent">Learn more</p>
+	 </div>
+	</div>
+
+  <div>
+  
+  <div id="contentRight">
+	<img src="images/image-hero-desktop.png" id="imgHero">
+  </div>
+
+<div id="txtFoot">
+	<img src ="images/client-databiz.svg" class = "imgFoot">
+	<img src ="images/client-audiophile.svg" class = "imgFoot">
+	<img src ="images/client-meet.svg" class = "imgFoot">
+	<img src ="images/client-maker.svg" class = "imgFoot">
+</div>
+<br>
+<br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Duccio DELFINI</a>.
+  </div>
+  
+  <div class="vide" id="mnu1">
+		<a href="#"><img src="images/icon-todo.svg">Todo List</a><br>
+		<a href="#"><img src="images/icon-calendar.svg">Calendar</a><br>
+		<a href="#"><img src="images/icon-reminders.svg">Reminders</a><br>
+		<a href="#"><img src="images/icon-planning.svg">Planning</a><br>
+  </div>
+  
+    <div class="vide" id="mnu2">
+		<a href="#">History</a><br>
+		<a href="#">Our Team</a><br>
+		<a href="#">Blog</a><br>
+  </div>
+  
+  <script>
+	document.getElementById("imgFeatures").addEventListener("mouseover",showFeatures);
+	document.getElementById("imgCompany").addEventListener("mouseover",showCompany);
+	document.getElementById("mnu1").addEventListener("mouseleave",hide);
+	document.getElementById("mnu2").addEventListener("mouseleave",hide);
+	
+	document.getElementById("btn").addEventListener("mouseover",btnOver);
+	document.getElementById("btn").addEventListener("mouseleave",btnDown);
+	
+	function showFeatures(){
+		document.getElementById("mnu1").className="mnuFeatures1";
+		document.getElementById("imgFeatures").src="images/icon-arrow-up.svg";
+	}
+	
+	function showCompany(){
+		document.getElementById("mnu2").className="mnuCompany";
+		document.getElementById("imgCompany").src="images/icon-arrow-up.svg";
+	}
+	
+	function hide(){
+		document.getElementById("mnu1").className="vide";
+		document.getElementById("mnu2").className="vide";
+		document.getElementById("imgFeatures").src="images/icon-arrow-down.svg";
+		document.getElementById("imgCompany").src="images/icon-arrow-down.svg";
+	}
+	
+	function btnOver(){
+		document.getElementById("btn").className="buttonSelected";
+	}
+	
+	function btnDown(){
+		document.getElementById("btn").className="button";
+	}
+  </script>
+  
+</body>
+</html>
